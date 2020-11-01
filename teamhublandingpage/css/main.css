@@ -1,0 +1,182 @@
+/*
+    Theme Name: TeamHub Theme
+    Description: TeamHub Landing Page Theme
+    Author: Braeden King
+    Author URL: https://github.com/braeden-king/
+    Tags: TeamHub , Landing Page
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    overflow: overlay;
+    background-color: #f3f3f3;
+    color: #232323;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar { 
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb { 
+    background: #232323;
+}
+
+::-webkit-scrollbar-track { 
+    background: transparent;
+}
+
+/* Global Styles */
+h1, h2, h3 {
+    font-weight: bold;
+    margin: .5em 0;
+}
+
+h1 { 
+    font-size: 3.5rem;
+}
+
+h2 { 
+    font-size: 2.5rem;
+}
+
+h3 { 
+    font-size: 2rem;
+}
+
+button {
+    font-size: 1.3rem;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+a {
+    color: #232323;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+img { 
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+
+/* Header Styling */
+header {
+    display: block;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5em 1em;
+}
+
+.logo {
+    color: #6026ff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+/* Hero Styling */
+#hero {
+    display: block;
+    background: linear-gradient(to bottom, #6026ffee, #5f33ffec, #816bffef), url(../images/landingpagebg.jpg);
+    background-size: cover;
+    height: 88vh;
+}
+
+#hero-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f3f3f3;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+}
+
+.hero-button {
+    background-color: #f3f3f3;
+    color: #6026ffee;
+    border: 1px solid #f3f3f3;
+    border-radius: 3em;
+}
+
+.hero-button:hover {
+    background-color: transparent;
+    color: #f3f3f3;
+}
+
+/* Main Styling */
+main {
+    padding: 0 2em;
+}
+
+section {
+    display: block;
+    text-align: center;
+    padding: 2em 0;
+    border-bottom: 1px solid #cecece;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+}
+
+
+/* Desktop Styling */
+@media (min-width: 930px) {
+    section {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        height: 100vh;
+    }
+
+    section div {
+        flex: 1;
+        padding: 2em;
+    }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
